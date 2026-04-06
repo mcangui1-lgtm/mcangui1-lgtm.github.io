@@ -1,0 +1,52 @@
+* {
+    --body-red: #634944;
+    --header-red: #772110;
+    --card-background: #F2E1DC;
+    --text-color: #D17636;
+    font-family: "Joti One"
+}
+
+body {
+    background-color: var(--body-red);
+}
+
+.card {
+    height: 700px;
+    width: 500px;
+    background-color: var(--card-background);
+    padding: 36px;
+    border-radius: 12px;
+    box-shadow: 8px 8px 8px var(--text-color);
+}
+
+.card > div img {
+    width: 100%;
+    object-fit: height;
+    margin-bottom: 12px;
+}
+
+h1 {
+    color: var(--header-red);
+}
+
+p {
+    color: var(--text-color);
+    margin-bottom: 36px;
+}
+
+.button {
+    background-color: var(--card-background);
+    border-style: solid;
+    border-radius: 12px;
+    border-color: var(--header-red);
+}
+
+.button:hover {
+    box-shadow: -4px 4px 4px var(--header-red);
+    transition: 500ms;
+}
+
+.button a{
+ color: var(--text-color);
+ font-style: italic;
+}
