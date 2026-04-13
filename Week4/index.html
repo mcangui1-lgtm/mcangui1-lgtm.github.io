@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 4 Website</title>
+    <style>
+        *{
+            font-size: 16px;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+        }
+
+        @media only screen and (max-width: 720px) {
+            *{
+                font-size: 12px;
+            }
+        }
+
+        .fixed {
+            background-color: rgb(210, 216, 223);
+            height: 50px;
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            width: 100vw;
+            z-index: 10;
+            display:flex;
+            align-items: auto;
+            flex-wrap: wrap;
+            align-content: space-around;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+
+        .buttons {
+            background-color:rgb(95, 138, 160);
+            color: white;
+            border: 2px solid rgb(2, 56, 79);
+            border-radius: 5px;
+        }
+
+        h1 {
+            color: rgb(0, 59, 104);
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            font-style: italic;
+        }
+
+        h2 {
+            margin-bottom: 30px;
+        }
+
+        p {
+            color: rgb(232, 240, 255);
+        }
+
+        .cards{
+            display:flex;
+            align-items: auto;
+            flex-wrap: wrap;
+            align-content: space-around;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+
+        .cards > div {
+            background-color: rgb(121, 152, 173);
+            color: rgb(0, 0, 0); 
+            margin-bottom: 16px;
+            border: 2px solid rgb(2, 56, 79);
+            border-radius: 5px;
+            box-sizing: border-box;
+            padding: 10px; 
+            flex-basis: 600px;
+        }
+
+        .cards > div img {
+            width: 100%;
+            object-fit: height;
+            margin-bottom: 12px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="fixed">
+        <button class="buttons">Cirrus Clouds</button>
+        <button class="buttons">Cumulus Clouds</button>
+        <button class="buttons">Nimbus Clouds</button>
+        <button class="buttons">Stratus Clouds</button>
+    </div>
+    
+    <div>
+        <h2>Week 4 Website</h2>
+        <div class="cards">
+            <div>
+                <img src="./assets/Cirrus.jpg"></img>
+                <h1>Cirrus Clouds</h1>
+                <p>Cirrus clouds are whispy, thin cloulds that are formed by ice crystals. They are a sign of fair, neutral weather.</p>
+            </div>
+    
+            <div>
+                <img src="./assets/Cumulus.jpg"></img>
+                <h1>Cumulus Clouds</h1>
+                <p>Cumulus clouds are fluffy clouds that can produce rain if they grow too long. </p>
+            </div>
+    
+            <div>
+                <img src="./assets/Nimbus.jpg"></img>
+                <h1>Nimbus Clouds</h1>
+                <p>Nimbus clouds are basically a combination of all other cloud types, being the largest and the type to produce rain and heavy storms.</p>
+            </div>
+            <div>
+                <img src="./assets/Stratus.jpg"></img>
+                <h1>Stratus Clouds</h1>
+                <p>Stratus clouds widespread and form a blanket-like structure along the sky. They genreally appear the north of warm fronts.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
